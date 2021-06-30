@@ -26,14 +26,14 @@ library(dplyr)
 
 
 #import file excel analytics
-                         #add your file here 
-analytics <- read_excel("Matching_per-confronto_analytics/Analytics 01 - bellissima.com - Italia All Traffic 20210622-20210630.xlsx", 
+                         #rename your file analytics
+analytics <- read_excel("analytics.xlsx", 
                         +     sheet = "Dataset1")
 
 #import file excel hotjar
 
-                      #add your file here 
-hotjar <- read_excel("#hotjar_extracted_file.xlsx") 
+                      #rename your file hotjar 
+hotjar <- read_excel("hotjar.xlsx") 
 
 
 

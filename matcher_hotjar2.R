@@ -44,7 +44,9 @@ names(hotjar)[18]<- "id"
 
 hotjar<- subset(hotjar, select= 18)
 
-analytics <- subset(analytics, select= 2)
+analytics <- analytics %>% select(id = "Hotjar User Id")
+
+#analytics <- subset(analytics, select= 2)
 
 matches <- merge(x=analytics, y=hotjar, by = "id")
 
